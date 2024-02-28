@@ -1,0 +1,40 @@
+{
+  "type": "module",
+  "name": "linkptt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsx --watch src/server.ts",
+    "bun": "bun --watch src/server.ts",
+    "migrate": "npx drizzle-kit generate:pg && npx tsx src/database/migrate.ts",
+    "studio": "npx drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@breezystack/lamejs": "^1.2.7",
+    "@fastify/cors": "^9.0.1",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "@supabase/supabase-js": "^2.39.7",
+    "@types/pg": "^8.11.0",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.29.3",
+    "fastify": "^4.26.1",
+    "fastify-cors": "^6.1.0",
+    "fastify-socket.io": "^5.0.0",
+    "lamejs": "^1.2.1",
+    "pg": "^8.11.3",
+    "postgres": "^3.4.3",
+    "socket.io": "^4.7.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/fastify-cors": "^2.1.0",
+    "drizzle-kit": "^0.20.14",
+    "install": "^0.13.0",
+    "typescript": "^5.3.3"
+  }
+}
